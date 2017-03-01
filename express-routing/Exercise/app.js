@@ -6,7 +6,7 @@ const app = express()
 //require the text.js file and set it to a cons named text
 const text = require(__dirname + '/router/text')
 
-//uses the poblic file to display the html file that is inside.
+//uses the poblic file to display the public files that is inside. This is exposed to the frondend
 app.use(express.static('public'))
 
 //uses the path /patato and de module text.
