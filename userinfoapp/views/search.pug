@@ -1,0 +1,15 @@
+doctype html
+html
+    head
+        title Express and puggify
+        link(rel="stylesheet", href="/static/style.css")
+    body
+        div#index.container
+            H1 Hello #{user}
+            p welcome to this crappy page
+            h2 Our curent users:
+            form(id="search" action="/search" method="post")
+                input(type="text", name="name", placeholder="search")
+                input(type="submit")
+        script(src="/static/jquery.js")
+        script(src="/static/custom.js")
